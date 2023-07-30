@@ -150,6 +150,18 @@ export const constantRoutes = [
   },
 
   {
+    path: '/home',
+    component: Layout,
+    redirect: '/home',
+    children: [{
+      path: 'home',
+      name: '首页',
+      component: () => import('@/views/home/index'),
+      meta: { title: '首页', icon: 'home' }
+    }]
+  },
+
+  {
     path: 'external-link',
     component: Layout,
     children: [
