@@ -2,7 +2,11 @@
     <div class="app-container">
       <h1>123</h1>
     </div>
-  </template>
+    <div>
+      <e-from></e-from>
+
+    </div>
+</template>
   
   <script>
   export default {
